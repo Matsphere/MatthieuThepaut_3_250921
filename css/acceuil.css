@@ -19,17 +19,41 @@
 
 #form_explorer {
   display: flex;
-  justify-content: space-evenly;
+  position: relative;
 
-  align-items: center;
   flex-direction: column;
   text-align: center;
   background-color: var(--main-lightgrey);
 }
+.form_cont_input {
+  background-color: var(--main-grey);
+  display: flex;
+  align-items: center;
+  height: 50px;
+  box-shadow: inset 0px 3px rgb(207, 207, 207);
+}
+
+.fa-map-marker-alt {
+  padding-left: 120px;
+  padding-right: 15px;
+}
 
 .input_explorer {
   background-color: var(--main-grey);
-  text-align: center;
+  border: 0px;
+  font-size: 1.1em;
+}
+.form_cont_text {
+}
+
+form h1 {
+  margin: 0px;
+  font-size: 1.7em;
+  padding: 40px 50px 0px 50px;
+}
+
+form p {
+  font-size: 1.2em;
 }
 
 .bouton_explorer {
@@ -39,8 +63,11 @@
     var(--main-pink)
   );
   color: white;
-  width: 50%;
-  font-size: 1em;
-  border-radius: 20px;
-  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 10px 0px 60px 0px;
+  border: 0px;
+
+  box-shadow: 0px 2px 5px 2px rgb(207, 207, 207);
 }
