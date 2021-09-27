@@ -2,8 +2,8 @@
   --main-purple: #9356dc;
   --main-pink: #ff79da;
   --main-blue: #99e2d0;
-  --main-grey: rgb(234, 234, 234);
-  --main-lightgrey: rgb(246, 246, 246);
+  --main-grey: #eaeaea;
+  --main-lightgrey: #f6f6f6;
   --main-font-text: "Roboto", "Arial";
   --main-font-title: "Shrikhand", "Arial";
 }
@@ -11,6 +11,9 @@
 .header_logo {
   display: block;
   margin: auto;
+}
+header {
+  padding: 10px 0px;
 }
 
 * {
@@ -20,7 +23,7 @@
 #form_explorer {
   display: flex;
   position: relative;
-
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   background-color: var(--main-lightgrey);
@@ -30,7 +33,7 @@
   display: flex;
   align-items: center;
   height: 50px;
-  box-shadow: inset 0px 3px rgb(207, 207, 207);
+  box-shadow: inset 0px 3px #cfcfcf;
 }
 
 .fa-map-marker-alt {
@@ -42,8 +45,6 @@
   background-color: var(--main-grey);
   border: 0px;
   font-size: 1.1em;
-}
-.form_cont_text {
 }
 
 form h1 {
@@ -66,8 +67,46 @@ form p {
   font-size: 1.2em;
   border-radius: 40px;
   padding: 20px;
-  margin: 10px 0px 60px 0px;
+  margin: 10px auto 60px auto;
   border: 0px;
 
-  box-shadow: 0px 2px 5px 2px rgb(207, 207, 207);
+  box-shadow: 0px 2px 5px 2px #c5c5c5;
+}
+
+.fonctionnement {
+  padding: 40px 20px;
+}
+
+.fonc_liste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-lightgrey);
+  height: 60px;
+  border-radius: 15px;
+  margin: 20px;
+  position: relative;
+  box-shadow: 0px 2px 5px 2px #c5c5c5;
+}
+
+.fonc_liste_numero {
+  color: white;
+  background-color: var(--main-purple);
+  border-radius: 50%;
+  position: absolute;
+  padding: 2px 5px;
+  font-size: 0.8em;
+  left: -7px;
+}
+.fonc_liste_icone {
+  position: absolute;
+  left: 40px;
+}
+
+.fonc_liste_icone_violet {
+  color: var(--main-purple);
+}
+
+.fonc_liste_violet {
+  background-color: #f5edff;
 }
