@@ -29,42 +29,48 @@
       />
     </header>
     <main>
-      <form id="form_explorer" action="#" method="post">
-        <div class="form_cont_input">
-          <i class="fas fa-map-marker-alt"></i>
-          <input
-            id="champ_explorer"
-            class="input_explorer"
-            type="text"
-            placeholder="Paris, Belleville"
-            required=""
-          />
+      <div class="explorer">
+        <div class="explorer_position">
+          <span class="explorer_position_texte"
+            ><i class="fas fa-map-marker-alt"></i>
+            <p>Paris, Belleville</p></span
+          >
         </div>
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-        <button type="submit" class="bouton_explorer">
-          Explorer nos restaurants
-        </button>
-      </form>
+        <div class="explorer_texte">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins
+          </p>
+          <a href="#restaurants" class="bouton_explorer">
+            Explorer nos restaurants
+          </a>
+        </div>
+      </div>
       <div class="fonctionnement">
         <h2>Fonctionnement</h2>
         <div class="fonc_liste">
           <p class="fonc_liste_numero">1</p>
-          <i class="fas fa-mobile-alt fonc_liste_icone"></i>
-          <p>Choisissez un restaurant</p>
+          <span class="fonc_cont_icone"
+            ><i class="fas fa-mobile-alt fonc_liste_icone"></i
+          ></span>
+          <span class="fonc_cont_texte"><p>Choisissez un restaurant</p></span>
         </div>
         <div class="fonc_liste">
           <p class="fonc_liste_numero">2</p>
-          <i class="fas fa-list-ul fonc_liste_icone"></i>
-          <p>Composez votre menu</p>
+          <span class="fonc_cont_icone"
+            ><i class="fas fa-list-ul fonc_liste_icone"></i
+          ></span>
+          <span class="fonc_cont_texte"><p>Composez votre menu</p></span>
         </div>
         <div class="fonc_liste fonc_liste_violet">
           <p class="fonc_liste_numero">3</p>
-          <i class="fas fa-store fonc_liste_icone fonc_liste_icone_violet"></i>
-          <p>Dégustez au restaurant</p>
+          <span class="fonc_cont_icone"
+            ><i class="fas fa-store fonc_liste_icone"></i
+          ></span>
+          <span class="fonc_cont_texte"><p>Dégustez au restaurant</p></span>
         </div>
       </div>
-      <section class="section_restaurants">
+      <section id="restaurants" class="section_restaurants">
         <header>
           <h2>Restaurants</h2>
         </header>
@@ -73,10 +79,11 @@
             <a href="#">
               <figure>
                 <div class="cont_image">
+                  <span class="restaurant_nouveau"><p>Nouveau</p></span>
                   <img
                     src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                     alt="Photo d'une assiette"
-                    class="image_restaurant img"
+                    class="image_restaurant_1 img"
                   />
                 </div>
                 <figcaption class="description_restaurant">
@@ -85,8 +92,7 @@
                     <p>Ménilmontant</p>
                   </div>
                   <div class="description_icone">
-                    <i class="fas fa-heart heart_full"></i>
-                    <i class="far fa-heart heart_empty"></i>
+                    <i class="far fa-heart"></i>
                   </div>
                 </figcaption>
               </figure>
@@ -96,10 +102,11 @@
             <a href="#">
               <figure>
                 <div class="cont_image">
+                  <span class="restaurant_nouveau"><p>Nouveau</p></span>
                   <img
                     src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                     alt="Photo d'une assiette"
-                    class="image_restaurant image"
+                    class="image_restaurant_2 img"
                   />
                 </div>
                 <figcaption class="description_restaurant">
@@ -121,7 +128,7 @@
                   <img
                     src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                     alt="Photo d'une assiette"
-                    class="image_restaurant img"
+                    class="image_restaurant_3 img"
                   />
                 </div>
                 <figcaption class="description_restaurant">
@@ -143,7 +150,7 @@
                   <img
                     src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                     alt="Photo d'une assiette"
-                    class="image_restaurant img"
+                    class="image_restaurant_4 img"
                   />
                 </div>
                 <figcaption class="description_restaurant">
@@ -163,18 +170,14 @@
     </main>
     <footer>
       <header>
-        <img
-          src="images/logo/ohmyfood@2x.svg"
-          alt="Logo Oh My Food"
-          class="footer_logo"
-        />
+        <h2>Ohmyfood</h2>
       </header>
       <ul>
         <li>
-          <i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a>
+          <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
         </li>
         <li>
-          <i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a>
+          <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
         </li>
         <li><a href="#">Mentions légales</a></li>
         <li><a href="#">Contact</a></li>
