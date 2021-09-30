@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <link rel="stylesheet" href="css/acceuil.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap
-      "
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
@@ -17,136 +22,173 @@
   </head>
   <body>
     <header>
-      <img src="images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food" />
+      <a href="index.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <a href="#">
+        <img
+          src="images/logo/ohmyfood@2x.svg"
+          alt="Logo Oh My Food"
+          class="header_logo"
+        />
+      </a>
     </header>
     <main>
-      <img
-        src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt="Photo d'une assiette"
-      />
+      <div class="cont_image">
+        <img
+          src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt="Photo d'une assiette"
+          class="img"
+        />
+      </div>
       <div class="cont_menu">
-        <header>
+        <header class="titre_menu">
           <h1>À la française</h1>
+          <i class="far fa-heart"></i>
         </header>
         <section class="section_entrees">
           <h2>ENTRÉES</h2>
-          <article>
+          <div class="underline"></div>
+          <div class="articles_menu">
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
-          <article>
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
-          <article>
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
+          </div>
         </section>
         <section class="section_plats">
-          <h2>ENTRÉES</h2>
-          <article>
+          <h2>PLATS</h2>
+          <div class="underline"></div>
+          <div class="articles_menu">
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
-          <article>
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
-          <article>
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
+          </div>
         </section>
         <section class="section_desserts">
-          <h2>ENTRÉES</h2>
-          <article>
+          <h2>DESSERTS</h2>
+          <div class="underline"></div>
+          <div class="articles_menu">
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
-          <article>
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
-          <article>
             <a href="#">
-              <div>
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange</p>
-              </div>
-              <div>
-                <p><strong>25€</strong></p>
-              </div>
+              <article class="article_menu">
+                <div class="article_menu_texte">
+                  <h3>Tartare de poulpe acidulé</h3>
+                  <p>Aux zests d'orange</p>
+                </div>
+                <div class="article_menu_prix">
+                  <p>25€</p>
+                </div>
+                <div class="article_menu_choix"></div>
+              </article>
             </a>
-          </article>
+          </div>
         </section>
-        <button>Commander</button>
+        <button class="bouton_commander">Commander</button>
       </div>
     </main>
     <footer>
       <header>
-        <img src="images/logo/ohmyfood@2x.svg" alt="Logo Oh My Food" />
+        <h2>Ohmyfood</h2>
       </header>
-      <a href="#">Proposer un restaurant</a>
-      <a href="#">Devenir partenaire</a>
-      <a href="#">Mentions légales</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </footer>
   </body>
 </html>
