@@ -122,6 +122,76 @@ h2 {
   margin: 0 0 5px 0;
 }
 
+.section_entrees {
+  animation: load-y 1s ease-in-out backwards;
+}
+
+.entrees_1 {
+  animation: load-x 0.25s 0.75s ease-in-out backwards;
+}
+
+.entrees_2 {
+  animation: load-x 0.25s 1s ease-in-out backwards;
+}
+
+.entrees_3 {
+  animation: load-x 0.25s 1.25s ease-in-out backwards;
+}
+
+.section_plats {
+  animation: load-y 1s 0.75s ease-in-out backwards;
+}
+.plats_1 {
+  animation: load-x 0.25s 1.5s ease-in-out backwards;
+}
+
+.plats_2 {
+  animation: load-x 0.25s 1.75s ease-in-out backwards;
+}
+
+.plats_3 {
+  animation: load-x 0.25s 2s ease-in-out backwards;
+}
+.section_desserts {
+  animation: load-y 1s 1.5s ease-in-out backwards;
+}
+
+.desserts_1 {
+  animation: load-x 0.25s 2.25s ease-in-out backwards;
+}
+
+.desserts_2 {
+  animation: load-x 0.25s 2.5s ease-in-out backwards;
+}
+
+.desserts_3 {
+  animation: load-x 0.25s 2.75s ease-in-out backwards;
+}
+
+@keyframes load-y {
+  from {
+    transform: translateY(2000px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes load-x {
+  from {
+    transform: translateX(2000px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .underline {
   height: 3px;
   width: 47px;
@@ -146,19 +216,52 @@ h2 {
   box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.2);
 }
 
+.article_menu:hover .article_menu_texte {
+  animation: shrink 1s forwards;
+}
+
+.article_menu:hover .article_menu_choix .fa-check-circle {
+  animation: spin 1s;
+}
+
+@keyframes shrink {
+  from {
+    flex-shrink: 0;
+  }
+  to {
+    flex-shrink: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .article_menu_texte {
-  flex: 1 1 70%;
+  flex: 1 0 86%;
+  min-width: 0;
   margin: auto 0 auto 10px;
 }
 .article_menu_texte h3 {
   font-size: 1.3em;
   font-weight: 500;
   margin: 0 0 5px 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .article_menu_texte p {
   margin: 0;
   font-size: 1.05em;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .article_menu_prix {
   display: flex;
