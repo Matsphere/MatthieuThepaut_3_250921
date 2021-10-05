@@ -43,6 +43,7 @@ ul {
 header {
   padding: 10px 0px;
   position: relative;
+  width: 100%;
 }
 
 .fa-arrow-left {
@@ -53,7 +54,14 @@ header {
 }
 
 .cont_image {
+  position: relative;
   height: 250px;
+}
+
+.image_enchantee {
+  position: absolute;
+
+  top: -10%;
 }
 
 .cont_menu {
