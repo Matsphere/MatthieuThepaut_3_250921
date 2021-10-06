@@ -81,7 +81,7 @@ h2 {
   margin: auto;
 }
 header {
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 .explorer {
@@ -134,9 +134,9 @@ h1 {
     var(--main-purple),
     var(--main-pink)
   );
-  width: 55%;
+  width: 235px;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.1em;
   border-radius: 40px;
   padding: 20px;
   margin: 40px auto 60px auto;
@@ -145,21 +145,27 @@ h1 {
 }
 
 .btn:hover {
-  filter: brightness(1.05);
+  filter: brightness(1.1);
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .fonctionnement {
   padding: 40px 20px;
 }
+.cont_liste {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .fonc_liste {
   display: flex;
+
+  flex: 1 1 25%;
   align-items: center;
   background-color: var(--main-lightgrey);
   height: 80px;
   border-radius: 22px;
-  margin: 30px 10px 20px 10px;
+  margin: 30px 40px 20px 40px;
   position: relative;
   box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.2);
 }
@@ -194,18 +200,18 @@ h1 {
   padding-left: 4px;
 }
 .fa-store {
-  color: var(--main-purple);
   transform: scaleX(0.8);
   padding-left: 4px;
 }
 
-.fonc_liste_violet {
+.fonc_liste:hover {
   background-color: #f5edff;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
-
+.fonc_liste:hover .fonc_cont_icone .fonc_liste_icone {
+  color: var(--main-purple);
+}
 .section_restaurants {
-  display: flex;
-  flex-direction: column;
   background-color: var(--main-lightgrey);
   padding: 40px 20px 50px 20px;
 }
@@ -215,16 +221,16 @@ h1 {
 }
 .resultats_restaurant {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   width: 100%;
 }
 
 .resultat_restaurant {
-  width: 100%;
+  flex: 1 1 20%;
   height: 285px;
-  margin-bottom: 25px;
+  margin: 0px 10px 25px 10px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.2);
@@ -326,7 +332,11 @@ h1 {
 
 footer {
   background-color: #353535;
-  padding: 0px 0px 30px 20px;
+  padding: 0px 20px 30px 20px;
+}
+
+footer header {
+  padding: 10px 0;
 }
 footer h2 {
   color: white;
@@ -343,10 +353,13 @@ footer a {
   font-weight: 500;
 }
 footer ul {
+  display: flex;
   padding: 0;
   margin: 0;
 }
-
+footer li {
+  margin-right: 30px;
+}
 .fa-utensils {
   font-size: 0.9em;
   margin-right: 15px;
@@ -356,4 +369,70 @@ footer ul {
   margin-right: 11px;
   transform-origin: left;
   transform: scaleX(0.73);
+}
+
+@media only screen and (max-width: 1200px) {
+  .cont_liste {
+    flex-direction: column;
+  }
+  .fonc_liste {
+    flex: 0 0 80px;
+    width: 45%;
+    margin: 30px auto 20px auto;
+  }
+
+  .resultat_restaurant {
+    flex: 1 0 40%;
+    margin: 0px 10px 25px 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .fonc_liste {
+    flex: 0 0 80px;
+    width: 60%;
+    margin: 30px auto 20px auto;
+  }
+
+  footer ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  footer li {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fonc_liste {
+    width: 80%;
+  }
+  .resultat_restaurant {
+    flex: 1 0 60%;
+    margin: 0px 40px 25px 40px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .bouton_explorer {
+    width: 55%;
+  }
+
+  .cont_liste {
+    flex-direction: row;
+  }
+  .fonc_liste {
+    flex: 1 1 100%;
+    margin: 30px 10px 20px 10px;
+  }
+
+  .resultats_restaurant {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .resultat_restaurant {
+    flex: 0 0 285px;
+    margin: 0px 0px 25px 0px;
+  }
 }
