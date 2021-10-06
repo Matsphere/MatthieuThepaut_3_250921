@@ -360,6 +360,10 @@ footer {
   background-color: #353535;
   padding: 0px 0px 30px 20px;
 }
+
+.header_footer {
+  padding: 10px 0;
+}
 footer h2 {
   color: white;
   font-weight: 500;

@@ -268,8 +268,9 @@ h1 {
   right: 15px;
   top: 15px;
 }
-.restaurant_nouveau p {
-  margin: 8px 12px;
+.restaurant_nouveau {
+  padding: 8px 12px;
+  margin: 0;
 }
 
 .description_restaurant {
@@ -335,7 +336,7 @@ footer {
   padding: 0px 20px 30px 20px;
 }
 
-footer header {
+.header_footer {
   padding: 10px 0;
 }
 footer h2 {
