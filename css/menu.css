@@ -89,9 +89,7 @@ h1 {
 
 .icone_menu {
   position: relative;
-  margin-right: 30px;
-  position: relative;
-  margin: auto 25px 35px 0;
+  margin: 0px 25px 0px 0;
   background-image: linear-gradient(
     to bottom,
     var(--main-purple),
