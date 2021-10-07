@@ -298,17 +298,8 @@ h1 {
 .description_icone {
   position: relative;
   margin: auto 25px 35px 0;
-  background-image: linear-gradient(
-    to bottom,
-    var(--main-purple),
-    var(--main-pink)
-  );
-  -webkit-background-clip: text;
-  background-size: 100% 0;
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
-.description_icone:hover {
+.description_icone:hover .heart-full {
   background-size: 100% 100%;
   transition: background-size 0.5s;
 }
@@ -329,6 +320,15 @@ h1 {
 .heart-full {
   position: relative;
   color: transparent;
+  background-image: linear-gradient(
+    to bottom,
+    var(--main-purple),
+    var(--main-pink)
+  );
+  -webkit-background-clip: text;
+  background-size: 100% 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 footer {
@@ -433,6 +433,7 @@ footer li {
     justify-content: space-between;
   }
   .resultat_restaurant {
+    width: 100%;
     flex: 0 0 285px;
     margin: 0px 0px 25px 0px;
   }

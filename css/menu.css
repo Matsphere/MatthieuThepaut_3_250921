@@ -90,17 +90,8 @@ h1 {
 .icone_menu {
   position: relative;
   margin: 0px 25px 0px 0;
-  background-image: linear-gradient(
-    to bottom,
-    var(--main-purple),
-    var(--main-pink)
-  );
-  -webkit-background-clip: text;
-  background-size: 100% 0;
-  background-position: bottom;
-  background-repeat: no-repeat;
 }
-.icone_menu:hover {
+.icone_menu:hover .heart-full {
   background-size: 100% 100%;
   transition: background-size 0.5s;
 }
@@ -115,12 +106,22 @@ h1 {
   left: 0;
   right: 0;
   z-index: -1;
-  color: #101010;
+  color: 101010;
 }
 
 .heart-full {
   position: relative;
   color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    to bottom,
+    var(--main-purple),
+    var(--main-pink)
+  );
+
+  background-size: 100% 0%;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 h2 {
@@ -402,6 +403,11 @@ footer li {
   }
   .image_enchantee {
     top: -40%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .image_enchantee {
+    top: -30%;
   }
 }
 @media only screen and (max-width: 1000px) {
