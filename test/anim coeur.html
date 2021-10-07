@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <link rel="stylesheet" href="anim-coeur.css" />
+    <style>
+      .far {
+        position: absolute;
+        z-index: -1;
+        font-size: 4em;
+      }
+      .fas {
+        font-size: 4em;
+        color: transparent;
+        background-image: linear-gradient(to top, blue, red);
+        -webkit-background-clip: text;
+        background-size: 100% 0;
+        background-position: bottom;
+        background-repeat: no-repeat;
+      }
+      .icone {
+        position: relative;
+        width: 32px;
+        height: 32px;
+      }
+
+      .icone:hover .fas {
+        background-size: 100% 100%;
+        transition: background-size 2s;
+      }
+    </style>
     <script
       src="https://kit.fontawesome.com/daa7ee3df5.js"
       crossorigin="anonymous"

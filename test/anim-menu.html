@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <style>
+      a {
+        text-decoration: none;
+        color: black;
+        display: block;
+      }
+
+      body {
+        background-color: grey;
+      }
+
+      .article_menu {
+        display: flex;
+        background-color: white;
+        overflow: hidden;
+        height: 75px;
+        width: 500px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.2);
+      }
+
+      .article_menu:hover .article_menu_texte {
+        animation: shrink 1s forwards;
+      }
+      .article_menu:not(:hover) .article_menu_texte {
+        animation: grow 1s;
+      }
+
+      .article_menu:hover .article_menu_choix .fa-check-circle {
+        animation: spin 1s;
+      }
+      .article_menu:not(:hover) .article_menu_choix .fa-check-circle {
+        animation: spin-reverse 1s;
+      }
+
+      @keyframes shrink {
+        from {
+          flex-shrink: 0;
+        }
+        to {
+          flex-shrink: 1;
+        }
+      }
+      @keyframes grow {
+        from {
+          flex-shrink: 1;
+        }
+        to {
+          flex-shrink: 0;
+        }
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spin-reverse {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(-360deg);
+        }
+      }
+
+      .article_menu_texte {
+        flex: 1 0 86%;
+        min-width: 0;
+        margin: auto 0 auto 10px;
+      }
+      .article_menu_texte h3 {
+        font-size: 1.3em;
+        font-weight: 500;
+        margin: 0 0 5px 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .article_menu_texte p {
+        margin: 0;
+        font-size: 1.05em;
+        font-weight: 300;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .article_menu_prix {
+        display: flex;
+        flex: 1 0 14%;
+        align-items: baseline;
+
+        margin: auto 0 15px 0;
+      }
+
+      .article_menu_prix p {
+        margin: 0;
+        font-weight: 500;
+      }
+
+      .article_menu_choix {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 18%;
+        background-color: green;
+      }
+
+      .fa-check-circle {
+        color: white;
+        font-size: 1.5em;
+      }
+
+      @keyframes load-x {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+          animation-timing-function: linear;
+        }
+
+        70% {
+          transform: translateX(30%);
+          opacity: 0.2;
+          animation-timing-function: linear;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+          animation-timing-function: ease-out;
+        }
+      }
+      .entrees_1 {
+        animation: load-x 0.75s 0.75s ease-in-out backwards;
+      }
+
+      .entrees_2 {
+        animation: load-x 0.75s 1s ease-in-out backwards;
+      }
+
+      .entrees_3 {
+        animation: load-x 0.75s 1.25s ease-in-out backwards;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/daa7ee3df5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Oh My Food</title>
+  </head>
+  <body>
+    <a href="#" class="entrees_1">
+      <article class="article_menu">
+        <div class="article_menu_texte">
+          <h3>Tartare de poulpe acidulé</h3>
+          <p>Aux zests d'orange</p>
+        </div>
+        <div class="article_menu_prix">
+          <p>25€</p>
+        </div>
+        <div class="article_menu_choix">
+          <i class="fas fa-check-circle"></i>
+        </div>
+      </article>
+    </a>
+    <a href="#" class="entrees_2">
+      <article class="article_menu">
+        <div class="article_menu_texte">
+          <h3>Velouté de légumes d'antan avec plus de texte</h3>
+          <p>Carotte, panais, topinambour</p>
+        </div>
+        <div class="article_menu_prix">
+          <p>35€</p>
+        </div>
+        <div class="article_menu_choix">
+          <i class="fas fa-check-circle"></i>
+        </div>
+      </article>
+    </a>
+    <a href="#" class="entrees_3">
+      <article class="article_menu">
+        <div class="article_menu_texte">
+          <h3>Soupe à l'oignon</h3>
+          <p>Revisitée</p>
+        </div>
+        <div class="article_menu_prix">
+          <p>20€</p>
+        </div>
+        <div class="article_menu_choix">
+          <i class="fas fa-check-circle"></i>
+        </div>
+      </article>
+    </a>
+  </body>
+</html>

@@ -136,46 +136,46 @@ h2 {
 }
 
 .entrees_1 {
-  animation: load-x 0.25s 0.75s ease-in-out backwards;
+  animation: load-x 0.75s 0.75s ease-in-out backwards;
 }
 
 .entrees_2 {
-  animation: load-x 0.25s 1s ease-in-out backwards;
+  animation: load-x 0.75s 1.25s ease-in-out backwards;
 }
 
 .entrees_3 {
-  animation: load-x 0.25s 1.25s ease-in-out backwards;
+  animation: load-x 0.75s 1.75s ease-in-out backwards;
 }
 
 .section_plats {
-  animation: load-y 1s 0.75s ease-in-out backwards;
+  animation: load-y 1s 1s ease-in-out backwards;
   margin-bottom: 20px;
 }
 .plats_1 {
-  animation: load-x 0.25s 1.5s ease-in-out backwards;
+  animation: load-x 0.75s 1.75s ease-in-out backwards;
 }
 
 .plats_2 {
-  animation: load-x 0.25s 1.75s ease-in-out backwards;
+  animation: load-x 0.75s 2.25s ease-in-out backwards;
 }
 
 .plats_3 {
-  animation: load-x 0.25s 2s ease-in-out backwards;
+  animation: load-x 0.75s 2.75s ease-in-out backwards;
 }
 .section_desserts {
-  animation: load-y 1s 1.5s ease-in-out backwards;
+  animation: load-y 1s 2s ease-in-out backwards;
 }
 
 .desserts_1 {
-  animation: load-x 0.25s 2.25s ease-in-out backwards;
+  animation: load-x 0.75s 2.75s ease-in-out backwards;
 }
 
 .desserts_2 {
-  animation: load-x 0.25s 2.5s ease-in-out backwards;
+  animation: load-x 0.75s 3.25s ease-in-out backwards;
 }
 
 .desserts_3 {
-  animation: load-x 0.25s 2.75s ease-in-out backwards;
+  animation: load-x 0.75s 3.75s ease-in-out backwards;
 }
 
 @keyframes load-y {
@@ -184,7 +184,7 @@ h2 {
     opacity: 0;
   }
 
-  70% {
+  50% {
     transform: translateY(10%);
     opacity: 0;
   }
